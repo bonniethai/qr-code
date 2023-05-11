@@ -1,16 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Outfit&);
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: Outfit;
+	font-family: "Outfit", sans-serif;
 	background-color: hsl(212, 45%, 89%);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 p {
@@ -18,24 +14,30 @@ p {
 	color: hsl(220, 15%, 55%);
 }
 
-h1 {
-	font-size: 25px;
+h2 {
 	font-weight: 700;
 	color: hsl(218, 44%, 22%);
 }
 
 img {
-	border-radius: 25px;
+	border-radius: 10px;
+	width: 300px;
+}
+
+.container {
+	width: 300px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .card {
 	background-color: hsl(0, 0%, 100%);
 	display: grid;
-	flex-direction: column;
 	place-content: center;
 	margin: 0 auto;
 	text-align: center;
-	padding: 20px 40px;
+	padding: 20px;
 	border-radius: 25px;
 	top: 50%;
 	left: 50%;
@@ -44,4 +46,6 @@ img {
 	box-shadow: hsla(212, 35%, 79%, 1) 0px 4px 16px,
 		hsla(212, 35%, 79%, 1) 0px 8px 24px,
 		hsla(212, 35%, 79%, 1) 0px 16px 56px;
+	height: fit-content;
+	width: fit-content;
 }
